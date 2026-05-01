@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    flex: 1;
+}
+
+button {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: #48bb78;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+.btn-primary:hover {
+    background: #38a169;
+}
+
+.btn-secondary {
+    background: #718096;
+    margin-right: 10px;
+}
+
+.btn-danger {
+    background: #f56565;
+}
+
+.btn-danger:hover {
+    background: #e53e3e;
+}
+
+.items-list {
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f7fafc;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.item span {
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    overflow-x: auto;
+    display: block;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #667eea;
+    color: white;
+}
+
+input[type="number"] {
+    width: 80px;
+    text-align: center;
+}
+
+.info {
+    background: #ebf8ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.result-card {
+    background: #f0fff4;
+    border: 2px solid #48bb78;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.best-alternative {
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.inconsistency {
+    background: #fff5f5;
+    border: 2px solid #f56565;
+    color: #c53030;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+    
+    input[type="number"] {
+        width: 55px;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+}
